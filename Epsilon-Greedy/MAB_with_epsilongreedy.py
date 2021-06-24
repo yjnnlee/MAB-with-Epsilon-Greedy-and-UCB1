@@ -90,11 +90,11 @@ def play(algo, arms, num_sims,num_time):
   rewards = np.zeros(num_sims*num_time) #rewards
 
   #roop simulation
-  for time in range(num_time):
+  for sim in range(num_time):
     algo.initialize(len(arms))
 
     #roop game
-    for sim in range(num_time):
+    for time in range(num_time):
       #calculate index
       index = sim * num_time + time
 
